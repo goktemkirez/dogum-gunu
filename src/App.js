@@ -2,6 +2,7 @@ import "./App.css";
 
 import { useEffect, useRef } from "react";
 import Timeline from "./components/Timeline/Timeline";
+import fiat from "./assets/photos/fiat.png"
 
 function App() {
   const videoEl = useRef(null);
@@ -20,7 +21,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
+        <img src={fiat} className="App-logo" alt="logo" />
 
         <Timeline />
 
