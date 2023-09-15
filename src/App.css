@@ -5,10 +5,8 @@
 .App-logo {
   height: 70px;
   margin-top: 50px;
-  margin-left: 46vw;
   position: fixed;
-  z-index: 9999;
-  left: 0;
+  z-index: 9999; 
   top: 0;
   pointer-events: none;
 }
@@ -68,5 +66,24 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.flipX {
+  animation: 4s anim-flipX ease infinite;
+}
+@keyframes anim-flipX {
+  0% {
+    opacity: 0;
+    transform: rotateX(720deg);
+  }
+  50% {
+    opacity: 1;
+    transform: rotateX(720deg);
+  }
+  100% {
+    /* animate nothing to pause animation at the end */
+    opacity: 1;
+    transform: rotateX(90def);
   }
 }

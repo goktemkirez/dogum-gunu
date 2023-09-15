@@ -1,11 +1,14 @@
 import "./App.css";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import Timeline from "./components/Timeline/Timeline";
-import fiat from "./assets/photos/fiat.png"
+import fiat from "./assets/photos/fiat.png";
+import { Dialog } from "@mui/material";
+import ReplyIcon from "@mui/icons-material/Reply";
 
 function App() {
   const videoEl = useRef(null);
+  const [open, setOpen] = useState(true);
 
   useEffect(() => {
     const attemptPlay = () => {
@@ -24,7 +27,44 @@ function App() {
         <img src={fiat} className="App-logo" alt="logo" />
 
         <Timeline />
-
+        <Dialog
+          sx={{
+            "& .MuiDialog-container": {
+              alignItems: "flex-end",
+              justifyContent: "flex-start",
+            },
+          }}
+          PaperProps={{
+            sx: {
+              width: 150,
+              height: 150,
+              m: 0,
+              p: 0,
+              display: "flex",
+              justifyContent: "flex-end",
+              alignItems: "flex-start",
+              background: "transparent",
+            },
+          }}
+          slotProps={{
+            backdrop: { sx: { background: "rgba(0, 0, 0, 0.75)" } },
+          }}
+          onClose={() => {
+            setOpen(false);
+          }}
+          onClick={() => setOpen(false)}
+          open={open}
+        >
+          <ReplyIcon
+            className="flipX"
+            sx={{
+              transform: "scale(5) rotate(-90deg)",
+              ml: 3,
+              mb: 12,
+              color: "#fff",
+            }}
+          />
+        </Dialog>
         <audio
           loop
           ref={videoEl}
@@ -40,6 +80,7 @@ function App() {
             boxShadow: "10px 10px 10px #aaaaaa",
             position: "sticky",
             bottom: 0,
+            height: "10vh",
           }}
         />
       </header>
