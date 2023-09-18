@@ -1,5 +1,35 @@
 export const timelineJson = [
     {
+        "id": 53,
+        "text": "",
+        "img":"https://res.cloudinary.com/dajbm4ku6/image/upload/v1694466101/merve/53.jpg",
+    },
+    {
+        "id": 52,
+        "text": "",
+        "img":"https://res.cloudinary.com/dajbm4ku6/image/upload/v1694466101/merve/52.jpg",
+    },
+    {
+        "id": 51,
+        "text": "",
+        "img":"https://res.cloudinary.com/dajbm4ku6/image/upload/v1694466101/merve/51.jpg",
+    },
+    {
+        "id": 50,
+        "text": "",
+        "img":"https://res.cloudinary.com/dajbm4ku6/image/upload/v1694466101/merve/50.jpg",
+    },
+    {
+        "id": 49,
+        "text": "",
+        "img":"https://res.cloudinary.com/dajbm4ku6/image/upload/v1694466101/merve/49.jpg",
+    },
+    {
+        "id": 48,
+        "text": "",
+        "img":"https://res.cloudinary.com/dajbm4ku6/image/upload/v1694466101/merve/48.jpg",
+    },
+    {
         "id": 47,
         "text": "",
         "img":"https://res.cloudinary.com/dajbm4ku6/image/upload/v1694466101/merve/47.jpg",
