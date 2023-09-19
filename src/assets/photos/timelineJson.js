@@ -1,5 +1,15 @@
 export const timelineJson = [
     {
+        "id": 55,
+        "text": "",
+        "img":"https://res.cloudinary.com/dajbm4ku6/image/upload/v1694466101/merve/55.jpg",
+    },
+    {
+        "id": 54,
+        "text": "",
+        "img":"https://res.cloudinary.com/dajbm4ku6/image/upload/v1694466101/merve/54.jpg",
+    },
+    {
         "id": 53,
         "text": "",
         "img":"https://res.cloudinary.com/dajbm4ku6/image/upload/v1694466101/merve/53.jpg",
